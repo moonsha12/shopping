@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .header{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(42,155,24,.3);
+    }
+   li{
+        display: flex;
+        margin-left:30px ;
+        border: 2px solid rgba(42,155,144,.3);
+    } 
+    /* li hover effects */
+    li:hover{
+        border-bottom: 5px double black;
+        
+    }
+
+</style>
 <body>
-    <h1>shopping</h1>
-    <p>
-        adeen sir here
-    </p>
+    <div class="header">
+        <img src="logo.png" alt="logo here">
+        <ul style="display: flex;">
+            <li><a style="text-decoration: none;" href="login.php">login</a></li>
+            <li><a style="text-decoration: none; "href="signup.php">signup</a></li>
+        </ul>
+    </div>
+    
 </body>
 </html>
