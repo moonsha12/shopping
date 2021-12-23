@@ -7,28 +7,64 @@
 </head>
 <style>
     *{
+    
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
     }
+    a{
+        color:white;
+    }
     .header{
+       
         font-family: 'Courier New', Courier, monospace;
         font-size: 1.5rem;
         display: flex;
         justify-content: space-between;
         background-color: rgba(42,155,24,.3);
     }
-   li{
+   li{ 
         display: flex;
         margin-left:30px ;
         border: 2px solid rgba(42,155,144,.3);
     } 
     /* li hover effects */
     li:hover{
-        border-bottom: 5px double black;
+        border-bottom: 5px double pink;
         
     }
+    .loader{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .load{
+        text-align: center;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        
+        box-shadow: 10px 5px 5px rgb(245, 241, 241);
+        animation: cir 2s linear infinite;
+    }
+    @keyframes cir{
+        0%{
+transform: rotate(0deg);
+}
+100%{
+transform: rotate(360deg);
+}
+    }
 
+    p{
+        color: royalblue;
+    }
+    body{
+        background-image: linear-gradient(60deg,        pink 50%,black 50%);
+    }
 </style>
 <body>
     <div class="header">
@@ -37,6 +73,14 @@
             <li><a style="text-decoration: none;" href="login.php">login</a></li>
             <li><a style="text-decoration: none; "href="signup.php">signup</a></li>
         </ul>
+    </div>
+    <div class="loader">
+        <p>
+        working on project coding is not completed
+    </p>
+        <div class="load">
+          
+            </div>
     </div>
     
 </body>
